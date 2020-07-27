@@ -1,4 +1,4 @@
-
+from shape import Shape
 # Circle class
 
 
@@ -7,6 +7,8 @@ class Circle(Shape):
     # TODO: Implement __init__() for this class
 
     def __init__(self, radius=1.0):
+        # Implemention  __init__ from Shape Class
+        super.__init__()
         # Remember this is a subclass of Shape!
         self.radius = radius
 
