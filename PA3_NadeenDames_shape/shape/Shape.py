@@ -8,3 +8,5 @@ class Shape:
     # overriding the str() for shape
     def __str__(self):
         return "I am a shape."
+    # def draw_shape(self,Shape): 
+    #     print(f"{Shape} is drawing...")
