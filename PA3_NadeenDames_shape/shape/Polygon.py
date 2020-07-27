@@ -1,4 +1,4 @@
-from shape import Shape
+from Shape import Shape
 
 # Polygon class
 
@@ -29,3 +29,5 @@ class Polygon(Shape):
         for i in range(self.n):
             # prints the sides of any given polygon
             print("Side", i+1, "is", self.sides[i])
+    def draw_shape(self,Shape): 
+        print(f"{Shape} is drawing...")
