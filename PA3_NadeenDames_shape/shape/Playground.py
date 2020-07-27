@@ -11,14 +11,20 @@ class Playground():
     Triangle=Triangle(1,4,2)
     Shape=Shape()
     
+    # Implement __init__() for this class
+
     def __init__(self):
         print("The instances you created")
+
+    # Call Method find_area of each class 
+
     print(f"{Circle} and area = {Circle.find_area()}")
     print(f"{Square} and area = {Square.find_area()}")
     print(f"{Triangle} and area = {Triangle.find_area()}")
 
     #find_circumference
     #find_perimeter
+    # Call Methods find_circumference and find_perimeter of each class
     print(f"{Circle} and circumference = {Circle.find_circumference()}")
     print(f"{Square} and perimeter = {Square.find_perimeter()}")
     print(f"{Triangle} and perimeter = {Triangle.find_perimeter()}")
