@@ -22,25 +22,25 @@ class Recipe:
 
     def add_ingredient(self, ingredient):
         self.list_of_ingredients=open("ingredients.txt","a+")
-        self.list_of_ingredients.write(ingredient)
+        self.list_of_ingredients.writelines(ingredient)
         pass
     def add_instructions(self, instruction):
         self.list_of_instructions=open("instructions.txt","a+")
-        self.list_of_instructions.write(instruction)
+        self.list_of_instructions.writelines(instruction)
         pass
     def read_ingredients(self):
         self.list_of_ingredients=open("ingredients.txt","r")    
         #print(self.list_of_ingredients.read())
         ingredient=self.list_of_ingredients.readlines()
         for ingredient_ in ingredient:
-            print(f"\t * {ingredient_}")
+            print(f"\t * {ingredient_}\n")
         pass
 
     def read_instructions(self):
         self.list_of_instructions=open("instructions.txt","r") 
         instruction=self.list_of_instructions.readlines()
         for instruction_ in instruction:
-            print(f"\t * {instruction_}")
+            print(f"\t * {instruction_}\n")
         #print(self.list_of_instructions.read())
         pass
     def print_ingredients(self):
@@ -54,7 +54,7 @@ class Recipe:
 
         pass
 
-recipe=Recipe("fruite Salat",2)
-recipe.print_ingredients()
-print("\n")
-recipe.print_instructions()
+# recipe=Recipe("fruite Salat",2)
+# recipe.print_ingredients()
+# print("\n")
+# recipe.print_instructions()
